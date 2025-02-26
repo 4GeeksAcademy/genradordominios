@@ -5,17 +5,19 @@ window.onload = function() {
     return;
 };
  */
+console.time("medicion")
 const generarDominio = () => {
 
     let pronoun = ['the', 'our'];
     let adj = ['great', 'big'];
     let noun = ['jogger', 'racoon'];
-    let com = ['.com', '.es', '.ar']
+    let ext = ['.com', '.es', '.ar']
     //write your code here
-    for (let i of pronoun)
-    for (let j of adj)
-    for (let n of noun)
-    for (let c of com)
-    console.log(i + j + n + c);
+    for (let p of pronoun)
+        for (let a of adj)
+            for (let n of noun)
+                for (let e of ext)
+                    console.log(p + a + n + e);
 }
-    generarDominio()
+generarDominio()
+console.timeEnd("medicion")
